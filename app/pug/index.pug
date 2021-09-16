@@ -1,0 +1,64 @@
+extends layout/layout
+append config
+	- var pageTitle = 'logoipsum';
+
+block main
+	header.header
+		.container-header
+			.row.d-flex.align-items-center
+				.col-6.col-md-4.col-lg-6
+					a.logo(href='#' style="background-image: url('../img/logoipsum.svg');")
+				.col-6.col-md-8.col-lg-6
+					ul.nav-bar
+						li
+							a(href='#about') ABOUT
+						li
+							a(href='#services') SERVICES
+						li
+							a(href='#') PRICING
+						li
+							a(href='#') CONTACT
+			.hamburger-btn
+				div
+	// end-header
+	section.section.page-section
+			.container#about
+				.row.align-items-center
+					.col-lg-5.col-md-6.col-sm-12.col-12
+						h1 Welcome!
+						p
+							|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur a nulla vel sollicitudin.
+							br
+							br
+							|Morbi consectetur facilisis urna, eget cursus nulla fermentum et. Morbi fringilla mauris vel nulla euismod, eu tincidunt elit porttitor.	
+					.col-lg-7.col-md-6.col-sm-12.col-12.d-flex.justify-content-end
+						img.section-background(src='../img/background.jpg' alt='img')
+	// end-section-1
+	section.section-2.page-section
+		.services-head.d-flex.justify-content-center.align-items-center
+			.h1#services Services
+		.container
+			.slider-box
+				.slide
+					.row.align-items-center
+						.col-lg-5.col-md-6.col-sm-12.col-12.order-md-2.order-2
+							.h1 Service 1
+							p
+								|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur a nulla vel sollicitudin.
+								br
+								br
+								|Morbi consectetur facilisis urna, eget cursus nulla fermentum et. Morbi fringilla mauris vel nulla euismod, eu tincidunt elit porttitor.	
+						.col-lg-7.col-md-6.col-sm-12.col-12.d-flex.justify-content-end.order-md-1.order-1
+							img.section-background(src='../img/background.jpg' alt='img')
+				.slide
+					.row.align-items-center
+						.col-lg-5.col-md-6.col-sm-12.col-12.order-md-2.order-2
+							.h1 Service 2
+							p
+								|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur a nulla vel sollicitudin.
+								br
+								br
+								|Morbi consectetur facilisis urna, eget cursus nulla fermentum et. Morbi fringilla mauris vel nulla euismod, eu tincidunt elit porttitor.	
+						.col-lg-7.col-md-6.col-sm-12.col-12.d-flex.justify-content-end.order-md-1.order-1
+							img.section-background(src='../img/background-2.jpg' alt='img')
+	.up-button
